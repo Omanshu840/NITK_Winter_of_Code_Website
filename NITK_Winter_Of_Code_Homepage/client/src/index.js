@@ -6,6 +6,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import { getCookie } from "./cookieFunctions";
 import { CookiesProvider } from "react-cookie";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const client = new ApolloClient({
   uri: "https://woc-demo-portal.herokuapp.com/",

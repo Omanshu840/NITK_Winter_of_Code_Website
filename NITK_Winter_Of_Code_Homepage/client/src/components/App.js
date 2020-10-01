@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { ThemeContext } from "../store/ThemeContext";
 import { UserContext } from "../store/UserContext";
 import Home from "./homepage/Home";
+import NewHome from "./newhomepage/NewHome";
 import About from "./aboutpage/About";
 import Projects from "./projectspage/Projects";
 import Project from "./projectspage/Project";
@@ -12,7 +13,7 @@ import Nav from "./navbar/Navbar";
 import { useCookies } from "react-cookie";
 import { useMutation } from "@apollo/react-hooks";
 import { refreshMutation } from "../queries";
-import Login, {Logout} from "./login/Login";
+import Login, { Logout } from "./login/Login";
 import ProjectApplications from "./profilepage/views/ProjectApplications";
 import OrganizationProjects from "./profilepage/views/OrganizationProjects";
 import SignUp from "./signup/applicant";
@@ -78,7 +79,7 @@ function App() {
           <ThemeContext.Provider value={[theme, setTheme]}>
             <Nav navbarState={navbarOpen} handleNavbar={handleNavbar} user={user} />
 
-            <Route path="/" exact component={Home} />
+            <Route path="/" exact component={NewHome} /> {/* redirecting to new home page */}
             <Route path="/about/" exact component={About} />
             <Route path="/login/" exact component={Login} />
             <Route path="/logout/" exact component={Logout} />
@@ -88,7 +89,7 @@ function App() {
             <Route
               exact
               path="/profile"
-              render={() => <Profile user={user} setUser={setUser}/>}
+              render={() => <Profile user={user} setUser={setUser} />}
             />
             <Route
               exact
