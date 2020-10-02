@@ -1,11 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 .homepage {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
+
+h1 {
+    font-size: 5.9vw;
+}
+
+h2 {
+    font-size: 3.0vw;
+}
+
+p {
+    font-size: 13px;
+}
+
+.padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 .jumbotron {
     height: 90vh;
     width: 100%;
-    background: url("./img/img1.jpg");
+    background-image: url("./img/img1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,9 +33,146 @@
 .jumbo-text {
     margin-top: 10%;
     color: white;
+    width: 100%;
+    max-width: 100%;
 }
 
-.section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+.jumbo-text h1 {
+    font-size: 15vw;
+}
+
+.intro h1 {
+    margin-bottom: 30px;
+}
+
+.section-2 .card-heading{
+    margin-bottom: 20px;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 10px #000;
+}
+
+/* Time line css */
+
+.Timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #c5c5c5;
+}
+
+.Timeline ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.Timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.Timeline .left{
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.Timeline .right{
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+.Timeline .content {
+    padding-bottom: 20px;
+    border: 1px solid #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.Timeline .left:before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -11px;
+    width: 20px;
+    height: 20px;
+    background: #c23941;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rbga(233, 33, 99, 0.2);
+}
+
+.Timeline .right:before{
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+    background: #c23941;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rbga(233, 33, 99, 0.2);
+}
+
+.Timeline .left .time {
+    position: absolute;
+    top: 20px;
+    right: -130px;
+    margin: 0;
+    padding: 8px 10px;
+    background: #303249;
+    color: #fff;
+    border-radius: 18px;    
+}
+
+.Timeline .right .time {
+    position: absolute;
+    top: 20px;
+    left: -130px;
+    margin: 0;
+    padding: 8px 10px;
+    background: #303249;
+    color: #fff;
+    border-radius: 18px;    
+}
+
+@media screen and (max-width: 600px) {
+    .Timeline:before {
+        left: 8%;
+    }
+
+    .Timeline ul li {
+        width: 100%;
+    }
+
+    .Timeline .left{
+        text-align: left;
+    }
+
+    .Timeline .right .time {
+        left: 10%; 
+    }
+
+    .Timeline .right:before{
+        left: 0px;
+    }
+
+    .Timeline .left:before{
+        right: -40px;
+    }
+
+    .Timeline .left .time {
+        right: 10%
+    }
 }
