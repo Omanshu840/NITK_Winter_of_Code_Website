@@ -1,5 +1,7 @@
 import { reach } from "yup";
 import React from "react";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import { Jumbotron, Container, Row, Card, CardBody, CardTitle, CardText } from 'reactstrap';
 import "./newhome.css";
 
@@ -7,30 +9,33 @@ const NewHome = () => {
     return (
         <div className="homepage">
             <Jumbotron className="text-center">
-                <div className="jumbo-text">
-                    <h1 className="display-1">NWoC</h1>
-                    <h2>NITK Winter of Code</h2>
-                </div>
+                <Fade top>
+                    <div className="jumbo-text">
+                        <h1 className="display-1">NWoC</h1>
+                        <h2>NITK Winter of Code</h2>
+                    </div>
+                </Fade>
             </Jumbotron>
 
             <div className="intro even-section">
                 <Container className="padding">
-                    <Row className="text-center">
-                        <div className="col-12">
-                            <h1 className="display-3">
-                                KickStart Open Source
+                    <Fade top>
+                        <Row className="text-center">
+                            <div className="col-12">
+                                <h1 className="display-3">
+                                    KickStart Open Source
                         </h1>
-                        </div>
-                    </Row>
-
-                    <Row className="text-center">
-                        <div className="col-12">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </div>
+                        </Row>
+                        <Row className="text-center">
+                            <div className="col-12">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                         </p>
-                        </div>
+                            </div>
 
-                    </Row>
+                        </Row>
+                    </Fade>
                 </Container>
             </div>
 
@@ -38,30 +43,36 @@ const NewHome = () => {
                 <Container className="section-2 padding">
                     <Row className="text-center">
                         <div className="col-sm-12 col-md-4">
-                            <Card className="my-3">
-                                <CardBody>
-                                    <CardTitle className="card-heading"><h2>Students</h2></CardTitle>
-                                    <CardText>Students contact the open source organizations they want to work with and write up a project proposal for the summer.</CardText>
-                                </CardBody>
-                            </Card>
+                            <Zoom>
+                                <Card className="my-3">
+                                    <CardBody>
+                                        <CardTitle className="card-heading"><h2>Students</h2></CardTitle>
+                                        <CardText>Students contact the open source organizations they want to work with and write up a project proposal for the summer.</CardText>
+                                    </CardBody>
+                                </Card>
+                            </Zoom>
                         </div>
 
                         <div className="col-sm-12 col-md-4">
-                            <Card className="py-3 my-3">
-                                <CardBody>
-                                    <CardTitle className="card-heading"><h2>Organizations</h2></CardTitle>
-                                    <CardText>Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students.</CardText>
-                                </CardBody>
-                            </Card>
+                            <Zoom>
+                                <Card className="py-3 my-3">
+                                    <CardBody>
+                                        <CardTitle className="card-heading"><h2>Organizations</h2></CardTitle>
+                                        <CardText>Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students.</CardText>
+                                    </CardBody>
+                                </Card>
+                            </Zoom>
                         </div>
 
                         <div className="col-sm-12 col-md-4">
-                            <Card className="py-3 my-3">
-                                <CardBody>
-                                    <CardTitle className="card-heading"><h2>Mentors</h2></CardTitle>
-                                    <CardText>Existing contributors with the organizations can choose to mentor a student project. Mentor interaction is a vital part of the program.</CardText>
-                                </CardBody>
-                            </Card>
+                            <Zoom>
+                                <Card className="py-3 my-3">
+                                    <CardBody>
+                                        <CardTitle className="card-heading"><h2>Mentors</h2></CardTitle>
+                                        <CardText>Existing contributors with the organizations can choose to mentor a student project. Mentor interaction is a vital part of the program.</CardText>
+                                    </CardBody>
+                                </Card>
+                            </Zoom>
                         </div>
                     </Row>
                 </Container>
@@ -77,15 +88,20 @@ const NewHome = () => {
                         </div>
 
                         <div className="col-12 col-md-6 content pt-5">
+                            <Fade left>
                             <p>
                                 Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students and then decide on the proposals they wish to mentor for the summer.
                         </p>
-
+                        </Fade>
+                            <Fade left>
                             <p>If accepted, students spend a month integrating with their organizations prior to the start of coding. Students then have three months to code while meeting the deadlines agreed upon with their mentors.</p>
-
+                            </Fade>
+                            <Fade left>
                             <p>
                                 Existing contributors with the organizations can choose to mentor a student project. Mentors and students work together to determine appropriate milestones and requirements for the summer.
+                                
                         </p>
+                        </Fade>
                         </div>
                     </Row>
                 </Container>
@@ -101,71 +117,87 @@ const NewHome = () => {
                         </div>
 
                         <div className="col-12 col-md-6 content pt-5">
+                            <Fade right>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                             </p>
+                            </Fade>
                         </div>
                     </Row>
                 </Container>
             </div>
 
-            <div className="intro even-section padding">
-                <h1 className="display-2 my-5">Timeline</h1>
-
+            <div className="even-section padding">
+                
+                <Fade top>
+                    <h1 className="display-2 my-5">Timeline</h1>
+                </Fade>
                 <div className="Timeline">
                     <Container>
                         <div className="timeline-item-left">
                             <div className="timeline-img"></div>
 
-                            <div className="timeline-content">
-                                <h2>Projects announced</h2>
-                                <div className="date">April 15, 2020</div>
-                            </div>
+                            <Fade left>
+                                <div className="timeline-content">
+                                    <h2>Projects announced</h2>
+                                    <div className="date">April 15, 2020</div>
+                                </div>
+                            </Fade>
                         </div>
 
                         <div className="timeline-item-right">
                             <div className="timeline-img"></div>
 
-                            <div className="timeline-content">
-                                <h2>Student application period</h2>
-                                <div className="date">April 15-20, 2020</div>
-                            </div>
+                            <Fade right>
+                                <div className="timeline-content">
+                                    <h2>Student application period</h2>
+                                    <div className="date">April 15-20, 2020</div>
+                                </div>
+                            </Fade>
                         </div>
 
                         <div className="timeline-item-left">
                             <div className="timeline-img"></div>
 
-                            <div className="timeline-content">
-                                <h2>Students selected</h2>
-                                <div className="date">April 30, 2020</div>
-                            </div>
+                            <Fade left>
+                                <div className="timeline-content">
+                                    <h2>Students selected</h2>
+                                    <div className="date">April 30, 2020</div>
+                                </div>
+                            </Fade>
                         </div>
 
                         <div className="timeline-item-right">
                             <div className="timeline-img"></div>
 
-                            <div className="timeline-content">
-                                <h2>Students begin working on projects</h2>
-                                <div className="date">May 1, 2020</div>
-                            </div>
+                            <Fade right>
+                                <div className="timeline-content">
+                                    <h2>Students begin working on projects</h2>
+                                    <div className="date">May 1, 2020</div>
+                                </div>
+                            </Fade>
                         </div>
 
                         <div className="timeline-item-left">
                             <div className="timeline-img"></div>
 
+                            <Fade left>
                             <div className="timeline-content">
                                 <h2>Student evaluation period</h2>
                                 <div className="date">June 1-3, 2020</div>
                             </div>
+                            </Fade>
                         </div>
 
                         <div className="timeline-item-right">
                             <div className="timeline-img"></div>
 
-                            <div className="timeline-content">
-                                <h2>Results announced</h2>
-                                <div className="date">June 5, 2020</div>
-                            </div>
+                            <Fade right>
+                                <div className="timeline-content">
+                                    <h2>Results announced</h2>
+                                    <div className="date">June 5, 2020</div>
+                                </div>
+                            </Fade>
                         </div>
 
                     </Container>
@@ -176,7 +208,7 @@ const NewHome = () => {
                 <Container className="padding">
                     <Row className="text-center">
                         <div className="col-md-4">
-                            <h1 className="py-4">Winter of Code</h1>
+                            <h1 className="py-4">NITK Winter of Code</h1>
                             <p>Winter of Code is an initiative by the National Institute of Technology to promote Open Source culture.</p>
                         </div>
                         <div className="col-md-4">
