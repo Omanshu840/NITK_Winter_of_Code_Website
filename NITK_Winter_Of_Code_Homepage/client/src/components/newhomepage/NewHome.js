@@ -134,6 +134,28 @@ const NewHome = () => {
                     </ul>
                 </div>
             </Container>
+
+            <footer>
+                <Container className="padding">
+                    <Row className="text-center">
+                        <div className="col-md-4">
+                            <h3 className="py-4">Winter of Code</h3>
+                            <p>Winter of Code is an initiative by the National Institute of Technology to promote Open Source culture.</p>
+                        </div>
+                        <div className="col-md-4">
+                            <h3 className="py-4">Links</h3>
+                            <p>About</p>
+                            <p>Projects</p>
+                            <p>Orgranizations</p>
+                        </div>
+                        <div className="col-md-4">
+                            <h3 className="py-4">Contact Information</h3>
+                            <p>Email: examplemail@xyx.com</p>
+                            <p>Telegram: example@NITK</p>
+                        </div>
+                    </Row>
+                </Container>
+            </footer>
         </div >
     )
 }

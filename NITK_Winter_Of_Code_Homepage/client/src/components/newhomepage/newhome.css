@@ -13,7 +13,7 @@ h2 {
 }
 
 p {
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .padding {
@@ -22,7 +22,7 @@ p {
 }
 
 .jumbotron {
-    height: 90vh;
+    height: 50vw;
     width: 100%;
     background-image: url("./img/img1.jpg");
     background-position: center;
@@ -151,28 +151,9 @@ p {
     .Timeline:before {
         left: 8%;
     }
+}
 
-    .Timeline ul li {
-        width: 100%;
-    }
-
-    .Timeline .left{
-        text-align: left;
-    }
-
-    .Timeline .right .time {
-        left: 10%; 
-    }
-
-    .Timeline .right:before{
-        left: 0px;
-    }
-
-    .Timeline .left:before{
-        right: -40px;
-    }
-
-    .Timeline .left .time {
-        right: 10%
-    }
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
 }
