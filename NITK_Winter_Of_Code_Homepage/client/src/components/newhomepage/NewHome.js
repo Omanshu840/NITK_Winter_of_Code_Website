@@ -13,143 +13,180 @@ const NewHome = () => {
                 </div>
             </Jumbotron>
 
-            <Container className="intro padding">
-                <Row className="text-center">
-                    <div className="col-12">
-                        <h1 className="display-3">
-                            KickStart Open Source
+            <div className="intro even-section">
+                <Container className="padding">
+                    <Row className="text-center">
+                        <div className="col-12">
+                            <h1 className="display-3">
+                                KickStart Open Source
                         </h1>
-                    </div>
-                </Row>
-
-                <Row className="text-center">
-                    <div className="col-12">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        </p>
-                    </div>
-
-                </Row>
-            </Container>
-
-            <Container className="section-2 padding">
-                <Row className="text-center">
-                    <div className="col-sm-12 col-md-4">
-                        <Card className="py-3 my-3">
-                            <CardBody>
-                                <CardTitle className="card-heading"><h2>Students</h2></CardTitle>
-                                <CardText>Students contact the open source organizations they want to work with and write up a project proposal for the summer.</CardText>
-                            </CardBody>
-                        </Card>
-                    </div>
-
-                    <div className="col-sm-12 col-md-4">
-                        <Card className="py-3 my-3">
-                            <CardBody>
-                                <CardTitle className="card-heading"><h2>Organizations</h2></CardTitle>
-                                <CardText>Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students.</CardText>
-                            </CardBody>
-                        </Card>
-                    </div>
-
-                    <div className="col-sm-12 col-md-4">
-                        <Card className="py-3 my-3">
-                            <CardBody>
-                                <CardTitle className="card-heading"><h2>Mentors</h2></CardTitle>
-                                <CardText>Existing contributors with the organizations can choose to mentor a student project. Mentor interaction is a vital part of the program.</CardText>
-                            </CardBody>
-                        </Card>
-                    </div>
-                </Row>
-            </Container>
-
-            <Container className="section-3 padding">
-                <Row>
-                    <div className="col-12 col-md-6">
-                        <img src={require('./img/img2.jpg')} alt="img" className="img-fluid" />
-                        <div className="caption text-white">
-                            <h1 className="display-2">How Does <br />it Work?</h1>
                         </div>
-                    </div>
+                    </Row>
 
-                    <div className="col-12 col-md-6 content pt-5">
-                        <p>
-                            Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students and then decide on the proposals they wish to mentor for the summer.
+                    <Row className="text-center">
+                        <div className="col-12">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                        </div>
+
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="odd-section">
+                <Container className="section-2 padding">
+                    <Row className="text-center">
+                        <div className="col-sm-12 col-md-4">
+                            <Card className="my-3">
+                                <CardBody>
+                                    <CardTitle className="card-heading"><h2>Students</h2></CardTitle>
+                                    <CardText>Students contact the open source organizations they want to work with and write up a project proposal for the summer.</CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
+
+                        <div className="col-sm-12 col-md-4">
+                            <Card className="py-3 my-3">
+                                <CardBody>
+                                    <CardTitle className="card-heading"><h2>Organizations</h2></CardTitle>
+                                    <CardText>Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students.</CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
+
+                        <div className="col-sm-12 col-md-4">
+                            <Card className="py-3 my-3">
+                                <CardBody>
+                                    <CardTitle className="card-heading"><h2>Mentors</h2></CardTitle>
+                                    <CardText>Existing contributors with the organizations can choose to mentor a student project. Mentor interaction is a vital part of the program.</CardText>
+                                </CardBody>
+                            </Card>
+                        </div>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="intro even-section">
+                <Container className="section-3 padding">
+                    <Row>
+                        <div className="col-12 col-md-6 Subheading">
+                            <div className="caption">
+                                <h1 className="display-2">How Does <br />it Work?</h1>
+                            </div>
+                        </div>
+
+                        <div className="col-12 col-md-6 content pt-5">
+                            <p>
+                                Open source projects apply to be mentor organizations. Once accepted, organizations discuss possible ideas with students and then decide on the proposals they wish to mentor for the summer.
                         </p>
 
-                        <p>If accepted, students spend a month integrating with their organizations prior to the start of coding. Students then have three months to code while meeting the deadlines agreed upon with their mentors.</p>
+                            <p>If accepted, students spend a month integrating with their organizations prior to the start of coding. Students then have three months to code while meeting the deadlines agreed upon with their mentors.</p>
 
-                        <p>
-                            Existing contributors with the organizations can choose to mentor a student project. Mentors and students work together to determine appropriate milestones and requirements for the summer.
+                            <p>
+                                Existing contributors with the organizations can choose to mentor a student project. Mentors and students work together to determine appropriate milestones and requirements for the summer.
                         </p>
-                    </div>
-                </Row>
-            </Container>
+                        </div>
+                    </Row>
+                </Container>
+            </div>
 
-            <Container className="padding">
-                <Row>
-                    <div className="col-12">
-                        <h1 className="display-2 my-5">Eligibility</h1>
-                        <p className="my-5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    </div>
-                </Row>
-            </Container>
+            <div className="intro odd-section">
+                <Container className="padding">
+                    <Row>
+                        <   div className="col-12 col-md-6 order-md-last  Subheading">
+                            <div className="caption">
+                                <h1 className="display-2">Eligibility</h1>
+                            </div>
+                        </div>
 
-            <Container className="padding">
-                <div className="col-12">
-                    <h1 className="display-2 my-5">Timeline</h1>
-                </div>
+                        <div className="col-12 col-md-6 content pt-5">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            </p>
+                        </div>
+                    </Row>
+                </Container>
+            </div>
+
+            <div className="intro even-section padding">
+                <h1 className="display-2 my-5">Timeline</h1>
+
                 <div className="Timeline">
-                    <ul>
-                        <li className="left">
-                            <div className="content">
-                                <h2>heading</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                            </div>
-                            <div className="time">
-                                1 December 2020
-                            </div>
-                        </li>
+                    <Container>
+                        <div className="timeline-item-left">
+                            <div className="timeline-img"></div>
 
-                        <li className="right">
-                            <div className="content">
-                                <h2>heading</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                            <div className="timeline-content">
+                                <h2>Projects announced</h2>
+                                <div className="date">April 15, 2020</div>
                             </div>
-                            <div className="time">
-                                10 December 2020
                         </div>
-                        </li>
 
-                        <li className="left">
-                            <div className="content">
-                                <h2>heading</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <div className="timeline-item-right">
+                            <div className="timeline-img"></div>
+
+                            <div className="timeline-content">
+                                <h2>Student application period</h2>
+                                <div className="date">April 15-20, 2020</div>
                             </div>
-                            <div className="time">
-                                1 December 2020
                         </div>
-                        </li>
-                        <div style={{ clear: "both" }}></div>
-                    </ul>
+
+                        <div className="timeline-item-left">
+                            <div className="timeline-img"></div>
+
+                            <div className="timeline-content">
+                                <h2>Students selected</h2>
+                                <div className="date">April 30, 2020</div>
+                            </div>
+                        </div>
+
+                        <div className="timeline-item-right">
+                            <div className="timeline-img"></div>
+
+                            <div className="timeline-content">
+                                <h2>Students begin working on projects</h2>
+                                <div className="date">May 1, 2020</div>
+                            </div>
+                        </div>
+
+                        <div className="timeline-item-left">
+                            <div className="timeline-img"></div>
+
+                            <div className="timeline-content">
+                                <h2>Student evaluation period</h2>
+                                <div className="date">June 1-3, 2020</div>
+                            </div>
+                        </div>
+
+                        <div className="timeline-item-right">
+                            <div className="timeline-img"></div>
+
+                            <div className="timeline-content">
+                                <h2>Results announced</h2>
+                                <div className="date">June 5, 2020</div>
+                            </div>
+                        </div>
+
+                    </Container>
                 </div>
-            </Container>
+            </div>
 
             <footer>
                 <Container className="padding">
                     <Row className="text-center">
                         <div className="col-md-4">
-                            <h3 className="py-4">Winter of Code</h3>
+                            <h1 className="py-4">Winter of Code</h1>
                             <p>Winter of Code is an initiative by the National Institute of Technology to promote Open Source culture.</p>
                         </div>
                         <div className="col-md-4">
-                            <h3 className="py-4">Links</h3>
+                            <h1 className="py-4">Links</h1>
                             <p>About</p>
                             <p>Projects</p>
                             <p>Orgranizations</p>
                         </div>
                         <div className="col-md-4">
-                            <h3 className="py-4">Contact Information</h3>
+                            <h1 className="py-4">Contact Information</h1>
                             <p>Email: examplemail@xyx.com</p>
                             <p>Telegram: example@NITK</p>
                         </div>
