@@ -30,8 +30,11 @@ const NewHome = () => {
                         <Row className="text-center">
                             <div className="col-12">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                        </p>
+                                Winter of Code aims at helping students get started with open source projects that directly impact peoples' lives.
+                                </p>
+                                <p>
+                                Winter of Code has a philosophy very similar to larger programs like GSoC and Outreachy. Winter of Code is designed to acclimatize people to the steps involved in taking up various projects in large organizations like VLC, Mozilla, etc, through GSoC and other programs.
+                                </p>
                             </div>
 
                         </Row>
@@ -112,14 +115,24 @@ const NewHome = () => {
                     <Row>
                         <   div className="col-12 col-md-6 order-md-last  Subheading">
                             <div className="caption">
-                                <h1 className="display-2">Eligibility</h1>
+                                <h1 className="display-2">How to Apply?</h1>
                             </div>
                         </div>
 
                         <div className="col-12 col-md-6 content pt-5">
                             <Fade right>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Find an Organization you think has a project you like. 
+                            </p>
+                            </Fade>
+                            <Fade right>
+                            <p>
+                               Choose the project which falls under your tech stack.
+                            </p>
+                            </Fade>
+                            <Fade right>
+                            <p>
+                               Make proposals and contact mentors.
                             </p>
                             </Fade>
                         </div>
@@ -213,9 +226,9 @@ const NewHome = () => {
                         </div>
                         <div className="col-md-4">
                             <h1 className="py-4">Links</h1>
-                            <p>About</p>
-                            <p>Projects</p>
-                            <p>Orgranizations</p>
+                            <a href="/about"><p>About</p></a>
+                            <a href="/projects"><p>Projects</p></a>
+                            <a href="/organizations"><p>Orgranizations</p></a>
                         </div>
                         <div className="col-md-4">
                             <h1 className="py-4">Contact Information</h1>
